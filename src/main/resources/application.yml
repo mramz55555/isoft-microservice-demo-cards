@@ -1,0 +1,9 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: cards
+  profiles:
+    active: prod
+  config:
+    import: "configserver:http://localhost:8070"
